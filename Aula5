@@ -1,0 +1,135 @@
+    Trabalhar com Repositório
+.
+  Repositório
+
+Repositório é um local de armazenamento onde o projeto e suas 
+alterações são mantidos.
+Na prática, é uma pasta comum no sistema.
+Para cada projeto gerenciando pelo GIT, um repositório é 
+configurado.
+
+Para cada projeto novo, seguimos o seguintes passos:
+
+1. Criar um diretório para armazenar o projeto
+2. Entrar no diretório(opcional)
+3. Inicializar o repositório Git.
+
+  Diretório
+
+É criado um subdiretório oculto .git, que guardará os dados de 
+alterações e snapshots.
+A área fora do diretório .git é o Diretório de Trabalho, onde 
+ficam armazenados os arquivos que você irá manipular. Ou seja, é a
+área onde interagimos diretamente com os arquivos do projeto.
+
+  Staging Area
+
+Local para onde os arquivos vão antes de um snapshot ser criado.
+Somente os arquivos da staging area vão para um snapshot.
+Selecionmos os arquivos desejados no diretório de trabalho.
+
+  Commits
+
+- Snapshot do projeto em um determinado momento, com informações 
+sobre o autor do conteúdo e quem o realizou
+- O estado anterior do projeto é denominado "pai". Commits são
+ligados entre si por conexões pai-filho.
+- O conjunto de commits relacionados entre si por paternidade é 
+chamado de branch(ramo)
+- Um commit pode ter dois pais, se for criado pelo(mescla) de dois
+branches.
+
+  Identificação do Commit
+
+Identificamos um commit pelo seu nome, que é uma string de 40 
+caracteres obtida pelo hash(SHA1) do commit.
+
+			Exercício Passo-a-passo				
+
+- Criar um novo repositório, de nome exercicio01.(iniciar o 
+repositorio!)
+- Criar um arquivo de nome projeto.txt no diretório, e digitar
+algum texto nele
+- Colocar o arquivo na staging area.
+- Efetuar commit no projeto, acrescentando uma mensagem curta.
+- Criar dois novos arquivos, de nomes tarefa.txt e pendencias.txt.
+- Colocá-los na staging area e comitar o projeto.
+- Renomear o arquivo pendencias.txt para restante.txt.
+- Adicionar texto ao arquivo tarefa.txt.
+- Verificar o status do diretório.
+- Colocar na área de stage os arquivos restante.txt e tarefa.txt.
+- Tirar o arquivo tarefa.txt da staging area.
+- Efetuar commit no projeto.
+- Verificar o status do diretório.
+
+
+			  Resolução do Exercício			
+
+$ mkdir exercicio01  # criando um diretório
+$ ls 		     # verificando que o diretório foi criado
+$ cd exercicio01     # entrando dentro do diretório
+$ pwd		     # verificando se entrou dentro do diretório
+/c/Users/Nome do Usuário/exercicio01
+$ git init	     # transforma o diretório atual em repositório
+Initialized empty Git repository in c:/Users/Nome do Usuario/exercicio01/.git/
+$ start notepad++ projeto.txt # vai criar o arquivo projeto.txt 
+$ git add projeto.txt # colocando esse arquivo na standing area
+$ git status
+On branch master
+No commits yet
+changes to be committed:
+  (use "git rm --cached <file>..."to unstage)
+$ git commit -m "projeto iniciado"
+$ touch tarefa.txt      # criando um arquivo vázio tarefa.txt
+$ touch pendencias.txt
+$ git add *  # adicionando todos os arquivos que foi criado na standing area
+$ mv pendencias.txt restante.txt # Renomear o nome de arquivo
+Nesse caso foi renomeado o pendencias.txt para restante.txt
+# Agora eu vou querer escrever dentro do arquivo tarefa.txt
+$ start notepad++ tarefa.txt  
+# O editor de texto deve ser aberto
+$ git rm --cached tarefa.txt  # tirando o arquivo da standing area
+# Como excluir tudo
+$ cd ..
+$ rm -rf exercicio01/
+
+
+    Clonagem
+
+É possível copiar um diretório inteiro, como todo o seu histórico
+e snapshots, em um processo chamado de "clonagem".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

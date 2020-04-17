@@ -1,0 +1,46 @@
+Como reverter um commit com o comando git reverter
+
+      Reverter Commits
+
+Eventualmente você terá a necessidade de reverter um commit, por 
+exemplo por conta de erros cometidos nos arquivos.
+Desfazer um commit é basicamente comitar exatamente o oposto do 
+commit em si. O git, na prática, cria um novo commit com as 
+mudanças oposta.
+
+Para tal usamos o comando git revert
+
+	Comando git revert
+
+git revert <hash do commit>
+
+Para reverter especificamente o último commit podemos usar também:
+
+git revert HEAD
+
+      Exemplo de git revert
+
+git log
+commit nome do commit
+
+git revert primeiros 4 caracteres do nome do commit
+
+    Cancelar uma operação revert
+
+Cancelar uma operação git revert com erros:
+git revert --abort
+
+      Regras importantes
+
+1. Deve-se trabalhar em um diretório de trabalho limpo. Executar
+sempre git add e git commit antes de tentar reverter um commit.
+2. Novamente: não mude o passado - ao menos não por enquanto!
+
+
+
+
+
+
+
+
+

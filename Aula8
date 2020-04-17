@@ -1,0 +1,31 @@
+Remover arquivo e restaurar o arquivo
+
+$ cat nome do arquivo  # mostra o que tem dentro do arquivo
+
+$ git rm nome do arquivo
+
+Para restaurar um arquivo apagado precisamos ter o nome do 
+commit dele
+
+$ git log --diff-filter=D --summary
+# Esse comando vai fazer uma filtragem dos arquivos deletados.
+
+$ git checkout bfb4~1 arq3
+updated 1 path from 6002ee7
+
+Esse bfb4 é o inicio do nome do commit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

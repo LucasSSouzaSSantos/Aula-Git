@@ -1,0 +1,126 @@
+    Configurar o Usuário no GIT
+
+Configurando o nome do usuário
+$ git config --global user.name "Lucas" 
+
+configurando o email do usuario
+$ git config --global user.email "lucas210souza@gmail.com"
+
+
+configurando o diretório de trabalho, mas é preciso saber em qual 
+diretório o usuário estar. Para saber o diretório atual é só dar
+um 'pwd'.
+--  Criando um diretório:
+    COMANDO
+$ pwd -- verifica a pasta atual
+$ mkdir pasta-git -- criando a pasta com o nome pasta-git
+$ ls -- ver os diretório ou pasta existente no diretório atual
+$ cd pasta-git
+
+Agora precisamos infomar pro git que eu quero usar essa pasta como
+diretório de trabalho
+$ git init . 
+mensagem: initialized empty Git repository in C:/pasta-git/.git
+
+criando um arquivo:
+$ touch teste.txt
+
+verificando se o arquivo foi criado
+$ ls
+
+$ git status
+On branch master
+No commits yet
+untracked files:
+  (use "git add <file>..." to include in what will be committed)
+      teste.txt
+nothing added to commit but untracked files present (use "git add" to track)
+$ git add teste.txt
+$ git status
+
+on branch master
+no commits yet
+changes to be committed:
+  (use "git rm -- chached <file>..." to unstage)
+      new file: teste.txt
+$ git commit -m "Primeiro commit"
+[master (root-commit) d573c3a] Primeiro commit
+    file changed, O insertions(+), 0 deletions(-)
+   create mode 100644 teste.txt
+$ git status
+On branch master
+othing to commit, working tree clean
+
+$ git log
+commit numero (HEAD -> master)
+Author: nome usuario <email usuario>
+\date: wed Dec
+
+      primeiro commit
+
+Comandos do Git
+
+Mais alguns do s comandos que serão mosttraodos nas próximas lições
+- init
+- clone 
+- status
+- add
+- commit
+- push
+- pull
+- branch
+- merge
+- stash
+- diff
+- log
+- fetch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
